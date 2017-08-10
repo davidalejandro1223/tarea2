@@ -1,24 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tarea2;
 
-/**
- *
- * @author Estudiantes
- */
 public class Hospital extends Edificio {
+    
+    private String nombre;
+    private String materialConstr;
+    private int capacidadPer;
+    private int cantPisos;
 
+    public Hospital(String nombre, String materialConstr, int capacidadPer, int cantPisos) {
+        this.nombre = nombre;
+        this.materialConstr = materialConstr;
+        this.capacidadPer = capacidadPer;
+        this.cantPisos = cantPisos;
+    }
+    
+    
+    
     @Override
-    String prenderLuces() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String prenderLuces() {
+        return "se han prendido las luces del hospital";
     }
 
     @Override
-    String autoLimpieza() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String autoLimpieza() {
+        return "Se ha empezado el sistema de auto limpieza";
     }
     
 }

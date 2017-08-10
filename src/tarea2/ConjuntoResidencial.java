@@ -10,15 +10,28 @@ package tarea2;
  * @author Estudiantes
  */
 public class ConjuntoResidencial extends Edificio{
+    
+    private String nombre;
+    private String materialConstr;
+    private int capacidadPer;
+    private int cantPisos;
+
+    public ConjuntoResidencial(String nombre, String materialConstr, int capacidadPer, int cantPisos) {
+        this.nombre = nombre;
+        this.materialConstr = materialConstr;
+        this.capacidadPer = capacidadPer;
+        this.cantPisos = cantPisos;
+    }
+    
 
     @Override
-    String prenderLuces() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String prenderLuces() {
+        return "Se han prendido las luces del conjunto residencial";
     }
 
     @Override
-    String autoLimpieza() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String autoLimpieza() {
+        return "Se ha empezado la auto limpieza";
     }
     
 }
